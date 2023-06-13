@@ -37,7 +37,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 float number1, number2;
 String^ operation;
 ```
-Ещё я исключил ввод букв и ненужных символов, указав ввод только клавишами с цифрами. При вводе же букв они автоматически стераются.
+Ещё я исключил ввод букв и ненужных символов, указав ввод только клавишами с цифрами. При вводе же букв они автоматически стираются.
 
 ```cpp
 private: System::Void textResult_KeyUp(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
@@ -79,8 +79,27 @@ private: System::Void buttonMinus_Click(System::Object^ sender, System::EventArg
 	textResult->Clear();
 }
 ```
-Потом после вводе второго числа `number2` и последущем нажатии кнопки равенства выполнялись следующие действия:
+Потом после ввода второго числа и последущем нажатии кнопки равенства выполнялись следующие действия:
 
 1) Конвертация введёного значения из текста в число и его озапись в переменную `number2`.
 2) Очиста `"TextBox"` для послеющего вывода ответа.
 3) Выполнение математического действия между `number1` и `number2` в зависимости от выбранной операции (переменной `operation`), конвертация в текст полученного числа и последующий его вывод в окне `"TextBox"`.
+
+```cpp
+private: System::Void buttonEqual_Click(System::Object^ sender, System::EventArgs^ e) {
+	number2 = Convert::ToInt32(textResult->Text);
+	textResult->Clear();
+	if (operation == "+") textResult->Text = Convert::ToString(number1 + number2);
+	if (operation == "-") textResult->Text = Convert::ToString(number1 - number2);
+	if (operation == "*") textResult->Text = Convert::ToString(number1 * number2);
+	if (operation == "/") textResult->Text = Convert::ToString(number1 / number2);
+}
+```
+
+Для конпки AC (кнопки очистки) я сделал так, чтобы при её нажатии в `"TextBox"` выводилось пустое значение, которое стирает собой число в поле ввода-вывода.
+
+```cpp
+private: System::Void buttonAC_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->textResult->Text = "";
+}
+```
