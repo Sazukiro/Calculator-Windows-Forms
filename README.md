@@ -103,3 +103,10 @@ private: System::Void buttonAC_Click(System::Object^ sender, System::EventArgs^ 
 	this->textResult->Text = "";
 }
 ```
+---
+
+# Ссылка на теоретический материал:
+
+<a href="https://www.youtube.com/watch?v=TLqipry1o9s&list=PL0lO_mIqDDFU4jqX2KAJkp7dfpc-IuKjB"><img src = "https://i.ytimg.com/vi/TLqipry1o9s/maxresdefault.jpg" width=80%></a>
+
+---
