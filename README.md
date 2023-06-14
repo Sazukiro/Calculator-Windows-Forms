@@ -26,7 +26,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 ![image](https://github.com/Sazukiro/Calculator-Windows-Forms/assets/133951840/f1b7cdb2-fe25-4c7f-acf6-d4cbc89253f9) ![image](https://github.com/Sazukiro/Calculator-Windows-Forms/assets/133951840/a0f8af70-83b5-46e6-b89a-6960320ef3e9)
 
 
-Также я заменил фон некоторым кнопкам на скачанные картинки в настройках кнопок с помощью парраметра `"BackgroundImage"`, и растянул их, выбрав в `"BackgroundImageLayout"` свойство `Zoom`. Также с помощью свойства `"Cursor"` сделал так, чтобы при наведении на кнопку и поле ввода курсор менялся.
+Также я заменил фон некоторым кнопкам на скачанные картинки в настройках кнопок с помощью параметра `"BackgroundImage"`, и растянул их, выбрав в `"BackgroundImageLayout"` свойство `Zoom`. Также с помощью свойства `"Cursor"` сделал так, чтобы при наведении на кнопку и поле ввода курсор менялся.
 
 ![image](https://github.com/Sazukiro/Calculator-Windows-Forms/assets/133951840/0df69e12-8553-48ff-8451-8e61cb4ee344)![image](https://github.com/Sazukiro/Calculator-Windows-Forms/assets/133951840/23699f79-87a5-4ba9-a0f5-ad43b400bf9c)
 
